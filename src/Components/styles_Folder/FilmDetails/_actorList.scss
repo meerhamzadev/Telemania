@@ -1,0 +1,22 @@
+.filmActorsSection {
+    text-decoration: none;
+
+    .actorDetails {
+        display        : flex;
+        flex-direction : column;
+        align-items    : center;
+        justify-content: center;
+
+        @include phoneResponsive {
+            font-size: 1.2rem;
+        }
+
+        img {
+            color        : white;
+            border-radius: 50%;
+            width        : 10rem;
+            height       : 10rem;
+        }
+
+    }
+}

@@ -1,0 +1,138 @@
+.actorInformation {
+    margin               : 0rem 6rem 0rem 6rem;
+    display              : grid;
+    color                : white;
+    gap                  : 3rem;
+    box-sizing           : border-box;
+    grid-template-columns: .5fr 1fr;
+    align-items          : center;
+    padding              : 0rem 1rem 0rem 1rem;
+
+    @include tabletResponsive {
+        grid-template-columns: 1fr;
+        grid-template-rows   : 1fr 1fr;
+    }
+
+    @include phoneResponsive {
+        margin               : 0rem 3rem 0rem 3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows   : .5fr 1fr;
+
+    }
+
+    .actorImage {
+        height: 30rem;
+        width : 30rem;
+
+        @include tabletResponsive {
+            width: 100%;
+        }
+
+        @include phoneResponsive {
+            justify-self: center;
+
+        }
+
+        img {
+            border-radius: 50%;
+            height       : 100%;
+            width        : 100%;
+            object-fit   : fill;
+
+            @include tabletResponsive {
+                border-radius: 0%;
+            }
+        }
+    }
+
+    .actorAllDetails {
+        text-align: justify;
+
+        h1 {
+            font-family: 'Noto Sans SC', sans-serif;
+            font-size  : 2.3rem;
+
+            @include phoneResponsive {
+                font-size: 3rem;
+            }
+        }
+
+        h3 {
+            font-size  : x-large;
+            font-weight: 600;
+
+            @include tabletResponsive {
+                font-size: 1.8rem;
+            }
+
+            @include phoneResponsive {
+                font-size: 2.1rem;
+            }
+
+            span {
+                margin-left: 1rem;
+                font-size  : 1.5rem;
+                font-weight: normal;
+
+                @include tabletResponsive {
+                    font-size: 1.7rem;
+                }
+
+                @include phoneResponsive {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .summary {
+            font-weight: normal;
+            line-height: 2rem;
+            font-size  : larger;
+
+            @include tabletResponsive {
+                font-size: 1.6rem;
+            }
+
+            @include phoneResponsive {
+                font-size  : 1.85rem;
+                line-height: 2.5rem;
+            }
+        }
+    }
+}
+
+.backToPreviousPageButton {
+    background-color: red;
+    font-size       : .9rem;
+    color           : white;
+    text-align      : center;
+    padding         : 1rem;
+    width           : 5rem;
+    border          : none;
+    outline         : none;
+    margin-bottom   : .5rem;
+    transition      : width 0.8s;
+
+    @include tabletResponsive {
+        width    : 10rem;
+        font-size: 1.2rem;
+    }
+
+    @include phoneResponsive {
+        width    : 12rem;
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        width : 7rem;
+        cursor: pointer;
+
+        &::before {
+            content    : '\f104';
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            float      : left;
+        }
+    }
+
+}
