@@ -1,0 +1,29 @@
+@mixin tabletResponsive() {
+    @media (min-width: 768px) and (max-width:1024px) {
+        @content;
+    }
+}
+
+@mixin phoneResponsive {
+    @media (max-width: 420px) {
+        @content;
+    }
+}
+
+
+@import './Components/styles_Folder/NavBar';
+@import './Components/styles_Folder/SharedComponents/DataFetchingAndRendering';
+@import './Components/styles_Folder/SharedComponents/FullPageData';
+@import './Components/styles_Folder/SharedComponents/FetchDataChild/RatingStars';
+@import './Components/styles_Folder/FilmDetails/filmDetails';
+@import './Components/styles_Folder/FilmDetails/filmVedioTrailer';
+@import './Components/styles_Folder/FilmDetails/actorList';
+@import './Components/styles_Folder/FilmDetails/actorDetails';
+@import './Components/styles_Folder/WatchList/WatchList';
+
+.Loading {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    height         : 60vh;
+}
