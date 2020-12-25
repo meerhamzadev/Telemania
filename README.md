@@ -35,5 +35,5 @@
 
 ## Contact 
 - [Connect on LinkedIn](https://www.linkedin.com/in/meerhamza1421/)
-- [Follow on twitter](twitter.com/meerHamza1421)
+- [Follow on twitter](https://www.twitter.com/meerHamza1421)
 - [hamzababar37@gmail.com](hamzababar37@gmail.com)
