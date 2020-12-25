@@ -11,7 +11,7 @@
 
 ## How to use
 
-### You can open the details of any movie or series by simply clicking on the card of that item or by clicking **View Details** button. If you want to check more stuff of a particular section e.g *Coming Soon*, simply press **view more** button 
+You can open the details of any movie or series by simply clicking on the card of that item or by clicking **View Details** button. If you want to check more stuff of a particular section e.g *Coming Soon*, simply press **view more** button 
 <div align= "center" >
 
  ![something went wrong](./READMEImages/View-More.png) 
