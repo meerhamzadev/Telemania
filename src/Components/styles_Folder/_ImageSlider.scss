@@ -1,0 +1,33 @@
+.Slider {
+    padding   : .3rem 1rem;
+    // height : rem;
+    height    : 35rem;
+
+    @include phoneResponsive {
+        height: 45rem;
+    }
+
+    @include tabletResponsive {
+        height: 45rem;
+    }
+
+    .imageSlider {
+        width    : 100%;
+        max-width: 90rem;
+        height   : 30rem;
+
+        @include phoneResponsive {
+            height: 45rem;
+        }
+
+        @include tabletResponsive {
+            height: 45rem;
+        }
+
+        img {
+            object-fit: fill;
+            width     : 100%;
+            height    : 100%;
+        }
+    }
+}

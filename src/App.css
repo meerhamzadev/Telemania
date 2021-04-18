@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 header {
-  background-color: #161616;
+  background-color: #070707;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr 1fr;
@@ -980,6 +980,106 @@ header .navBarRightContent path:hover {
   font-family: 'Ubuntu', sans-serif;
   color: #3f3e3e;
   font-size: 3rem;
+}
+
+.Slider {
+  padding: .3rem 1rem;
+  height: 35rem;
+}
+
+@media (max-width: 420px) {
+  .Slider {
+    height: 45rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Slider {
+    height: 45rem;
+  }
+}
+
+.Slider .imageSlider {
+  width: 100%;
+  max-width: 90rem;
+  height: 30rem;
+}
+
+@media (max-width: 420px) {
+  .Slider .imageSlider {
+    height: 45rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Slider .imageSlider {
+    height: 45rem;
+  }
+}
+
+.Slider .imageSlider img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  margin-top: 2rem;
+  color: antiquewhite;
+  background-color: #070707;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 1rem;
+  height: 10rem;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__logo__image {
+  width: 4rem;
+  height: 4em;
+}
+
+.footer__logo__image img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+
+.footer__logo__title {
+  font-family: Fugaz One, cursive;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.footer__socialMedia {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 6rem;
 }
 
 .Loading {

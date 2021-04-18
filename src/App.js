@@ -14,10 +14,12 @@ import ActorDetail from './Components/Js-Files/FilmDetails/ActorDetail';
 import WatchList from './Components/Js-Files/WatchList/WatchList';
 import SearchBox from './Components/Js-Files/SearchBox/SearchBox';
 import ErrorBoundary from './Components/Js-Files/ErrorBounderies/ErrorBoundary';
+import Footer from './Components/Js-Files/Footer/Footer';
 
 
 const App = () => (
   <Router>
+
     <NavBar />
     <Switch>
       <Route path="/" component={HomePage} exact />
@@ -34,6 +36,7 @@ const App = () => (
       {/* </ErrorBoundary> */}
       <Route path="/Actor/:actorId" component={ActorDetail} exact />
     </Switch>
+    <Footer />
   </Router>
 );
 
