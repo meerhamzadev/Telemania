@@ -13,10 +13,10 @@ function Footer() {
                 </h1>
             </div>
             <div className="footer__socialMedia">
-                <a href="https://github.com/MeerHamza1421" target="_blank" rel="noopener noreferrer">
+                <a href="https://twitter.com/MeerHamza1421" target="_blank" rel="noopener noreferrer">
                     <FaTwitter color="#1da1f2" size="2rem" />
                 </a>
-                <a href="https://twitter.com/MeerHamza1421" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/MeerHamza1421" target="_blank" rel="noopener noreferrer">
                     <FaGithub color="white" size="2rem" />
                 </a>
             </div>

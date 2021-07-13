@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import BeatLoader from "react-spinners/BeatLoader";
-import RatingsStars from '../Shared_Component/FetchDataDisplayChild/RatingsStars';
-import FilmVedioTrailer from './FilmVedioTrailer';
-import ActorList from './ActorList';
+import RatingsStars from '../../Shared_Component/FetchDataDisplayChild/RatingsStars';
+import FilmVedioTrailer from '../FilmVideoTrailer/FilmVedioTrailer';
+import ActorList from '../ActorList/ActorList';
 
 const ItemDetailPage = ({ match }, props) => {
     const [movieDetail, updateMovieDetail] = useState({})

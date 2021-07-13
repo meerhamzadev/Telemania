@@ -917,7 +917,7 @@ header .navBarRightContent path:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url("./Components/Js-Files/assets/EmptyBox.png");
+  background-image: url("./Components/assets/EmptyBox.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;

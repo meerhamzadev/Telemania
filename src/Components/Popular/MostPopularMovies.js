@@ -1,16 +1,17 @@
 import React, { useContext } from 'react'
-import FullPageData from '../Shared_Component/FullPageData';
+import FullPageData from '../Shared_Component/FullPageData/FullPageData';
 import { FetchedDataContext } from '../Shared_Component/DataFetchingContext';
 
-const Top250Series = () => {
+const MostPopularMovies = () => {
     const [FilmData, updateFilmData] = useContext(FetchedDataContext)
+
     return (
 
         <FullPageData
-            sectionTitle="Most_Rated_Series"
-            filmData={FilmData[5].items}
+            sectionTitle="Trending_Movies"
+            filmData={FilmData[2].items}
         />
-    )
+    );
 }
 
-export default Top250Series
+export default MostPopularMovies

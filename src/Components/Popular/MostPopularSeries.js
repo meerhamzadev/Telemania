@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import FullPageData from '../Shared_Component/FullPageData';
+import FullPageData from '../Shared_Component/FullPageData/FullPageData';
 import { FetchedDataContext } from '../Shared_Component/DataFetchingContext';
 
 const MostPopularSeries = () => {

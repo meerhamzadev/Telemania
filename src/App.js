@@ -1,20 +1,20 @@
 import React from 'react'
-import NavBar from './Components/Js-Files/navBar/NavBar';
-import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import InTheaters from './Components/Js-Files/InTheators/InTheators';
-import HomePage from './Components/Js-Files/HomePage/HomePage';
-import ComingSoon from './Components/Js-Files/CommingSoon/ComingSoon';
-import MostPopularMovies from './Components/Js-Files/Popular/MostPopularMovies';
-import MostPopularSeries from './Components/Js-Files/Popular/MostPopularSeries';
-import Top250Series from './Components/Js-Files/Top250/Top250Series';
-import Top250Movies from './Components/Js-Files/Top250/Top250Movies';
-import ItemDetailPage from './Components/Js-Files/FilmDetails/ItemDetailPage';
-import ActorDetail from './Components/Js-Files/FilmDetails/ActorDetail';
-import WatchList from './Components/Js-Files/WatchList/WatchList';
-import SearchBox from './Components/Js-Files/SearchBox/SearchBox';
-import ErrorBoundary from './Components/Js-Files/ErrorBounderies/ErrorBoundary';
-import Footer from './Components/Js-Files/Footer/Footer';
+import NavBar from './Components/navBar/NavBar';
+import InTheaters from './Components/InTheators/InTheators';
+import HomePage from './Components/HomePage/HomePage';
+import ComingSoon from './Components/CommingSoon/ComingSoon';
+import MostPopularMovies from './Components/Popular/MostPopularMovies';
+import MostPopularSeries from './Components/Popular/MostPopularSeries';
+import Top250Series from './Components/Top250/Top250Series';
+import Top250Movies from './Components/Top250/Top250Movies';
+import ItemDetailPage from './Components/FilmDetails/ItemDetails/ItemDetailPage';
+import ActorDetail from './Components/FilmDetails/ActorDetails/ActorDetail';
+import WatchList from './Components/WatchList/WatchList';
+import SearchBox from './Components/SearchBox/SearchBox';
+import ErrorBoundary from './Components/ErrorBounderies/ErrorBoundary';
+import Footer from './Components/Footer/Footer';
+import './App.css';
 
 
 const App = () => (

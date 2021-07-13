@@ -57,35 +57,35 @@ const FetchedDataDisplayComponent = props => {
                                                 color="white" size="1.6rem" />
                                         </div> : dataOfApi.genres.split(',').length >= 4
 
-                                                ? <div className="tab_phoneButton">
-                                                    <h3>Genres:    <span style={{ fontSize: '0.94rem' }} >{dataOfApi.genres}</span></h3>
-                                                    {
-                                                        window.location.href.slice(window.location.href.indexOf('_') + 1, window.location.href.length) !== 'movieWatchList' ?
-                                                            <AiOutlinePlus onClick={e => { addToWatchList(e, dataOfApi) }}
-                                                                className="dotMenu"
-                                                                color="white" size="1.6rem" />
-                                                            :
-                                                            <AiOutlineMinus onClick={e => { removeFromWatchList(e, dataOfApi) }}
-                                                                className="dotMenu"
-                                                                color="white" size="1.6rem" />
+                                            ? <div className="tab_phoneButton">
+                                                <h3>Genres:    <span style={{ fontSize: '0.94rem' }} >{dataOfApi.genres}</span></h3>
+                                                {
+                                                    window.location.href.slice(window.location.href.indexOf('_') + 1, window.location.href.length) !== 'movieWatchList' ?
+                                                        <AiOutlinePlus onClick={e => { addToWatchList(e, dataOfApi) }}
+                                                            className="dotMenu"
+                                                            color="white" size="1.6rem" />
+                                                        :
+                                                        <AiOutlineMinus onClick={e => { removeFromWatchList(e, dataOfApi) }}
+                                                            className="dotMenu"
+                                                            color="white" size="1.6rem" />
 
-                                                    }
-                                                </div>
+                                                }
+                                            </div>
 
-                                                : <div className="tab_phoneButton">
-                                                    <h3>Genres:    <span>{dataOfApi.genres}</span></h3>
-                                                    {
-                                                        window.location.href.slice(window.location.href.indexOf('_') + 1, window.location.href.length) !== 'movieWatchList' ?
-                                                            <AiOutlinePlus onClick={e => { addToWatchList(e, dataOfApi) }}
-                                                                className="dotMenu"
-                                                                color="white" size="1.6rem" />
-                                                            :
-                                                            <AiOutlineMinus onClick={e => { removeFromWatchList(e, dataOfApi) }}
-                                                                className="dotMenu"
-                                                                color="white" size="1.6rem" />
+                                            : <div className="tab_phoneButton">
+                                                <h3>Genres:    <span>{dataOfApi.genres}</span></h3>
+                                                {
+                                                    window.location.href.slice(window.location.href.indexOf('_') + 1, window.location.href.length) !== 'movieWatchList' ?
+                                                        <AiOutlinePlus onClick={e => { addToWatchList(e, dataOfApi) }}
+                                                            className="dotMenu"
+                                                            color="white" size="1.6rem" />
+                                                        :
+                                                        <AiOutlineMinus onClick={e => { removeFromWatchList(e, dataOfApi) }}
+                                                            className="dotMenu"
+                                                            color="white" size="1.6rem" />
 
-                                                    }
-                                                </div>
+                                                }
+                                            </div>
                                         :
                                         <div className="tab_phoneButton">
                                             {
@@ -108,7 +108,7 @@ const FetchedDataDisplayComponent = props => {
 
                                     <Link className="Details" to={`/${dataOfApi.id}`}>
                                         View Details
-                                        </Link>
+                                    </Link>
 
                                     {
                                         window.location.href.slice(window.location.href.indexOf('_') + 1, window.location.href.length) === 'movieWatchList' ?
@@ -118,14 +118,14 @@ const FetchedDataDisplayComponent = props => {
                                                 className="removeFromWatchListButton"
                                                 id={dataOfApi.id}>
                                                 Remove from WatchList
-                                                </button>
+                                            </button>
                                             :
 
                                             <button
                                                 onClick={e => { addToWatchList(e, dataOfApi) }}
                                                 className="WatchList">
                                                 Add to WatchList
-                                                </button>
+                                            </button>
                                     }
                                 </div>
 

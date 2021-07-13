@@ -1,5 +1,5 @@
 import React from 'react';
-import DataFetchingAndRendering from '../Shared_Component/DataFetchingAndRendering';
+import DataFetchingAndRendering from '../DataFetchingAndRendering/DataFetchingAndRendering';
 import { Link } from 'react-router-dom';
 
 const FullPageData = (props) => {

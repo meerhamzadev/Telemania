@@ -1,5 +1,5 @@
 import React from 'react';
-import FetchedDataDisplayComponent from './FetchedDataDisplayComponent';
+import FetchedDataDisplayComponent from '../FetchedDataDisplayComponent';
 
 
 const DataFetchingAndRendering = (props) => {
