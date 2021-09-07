@@ -1,4 +1,4 @@
-<img src="https://socialify.git.ci/MeerHamza1421/Telemania/image?description=1&font=Inter&language=1&owner=1&pattern=Plus&theme=Light" alt="Telemania" width="640" height="230" />
+![header image](./assets/header.jpeg)
 
 ### *Tele-Mania* is an application for entertainment enthusiasts which provides each and every thing related to a movie or a series plus it also gives information of  currently streaming movies coming soon movies and much more.
 
