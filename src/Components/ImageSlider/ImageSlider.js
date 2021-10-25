@@ -8,8 +8,6 @@ function ImageSlider() {
         <Carousel className="Slider">
             {
                 FilmData[1].items.slice(3, FilmData[1].items.length).map(data => {
-                    console.log(data);
-                    
                     return (
                         <div className="imageSlider">
                             <img src={data.image} alt="something went wrong" />
