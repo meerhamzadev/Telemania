@@ -1080,6 +1080,16 @@ header .navBarRightContent path:hover {
   color: white;
 }
 
+@media (max-width: 440px) and (max-height: 900px) {
+  .Slider .imageSlider {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .Slider .imageSlider__info {
+    display: none;
+  }
+}
+
 .footer {
   margin-top: 2rem;
   color: antiquewhite;

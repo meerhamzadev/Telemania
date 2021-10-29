@@ -83,5 +83,13 @@
                 }
             }
         }
+        
+        @media (max-width: 440px) and (max-height: 900px) {
+            grid-template-columns: 1fr;
+            
+            &__info {
+                display: none;
+            }
+        }
     }
 }
