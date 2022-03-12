@@ -54,66 +54,66 @@ header {
     }
 
     .navBarCenterContent {
-        @include flex-properties(5);
+        @include flex-properties(0);
         // justify-content: flex-end;
 
-        form {
-            input {
-                outline         : none;
-                border          : none;
-                background-color: inherit;
-                width           : 35rem;
-                color           : $navBarHoverColor;
-                font-size       : 1.1rem;
-                border-bottom   : 2px solid $navBarHoverColor;
+        // form {
+        input {
+            outline         : none;
+            border          : none;
+            background-color: inherit;
+            width           : 35rem;
+            color           : $navBarHoverColor;
+            font-size       : 1.1rem;
+            border-bottom   : 2px solid $navBarHoverColor;
 
-                @include tabletResponsive {
-                    width: 32rem;
-                }
-
-                @include phoneResponsive {
-                    width: 25rem;
-                }
-
-                &:focus {
-                    border-bottom: 3px solid rgb(0, 0, 247);
-                    color        : $navBarHoverColor;
-                }
+            @include tabletResponsive {
+                width: 32rem;
             }
 
-            a {
-                text-decoration : none;
-                outline         : none;
-                border          : none;
-                background-color: inherit;
-                color           : $navBarHoverColor;
-
-                &::after {
-                    font-family: "Font Awesome 5 free";
-                    font-weight: 900;
-                    font-size  : 1.4rem;
-                    content    : '\f002';
-
-                }
-
-                &:hover {
-                    color : $navBarPrimaryColor;
-                    cursor: pointer;
-                }
+            @include phoneResponsive {
+                width: 25rem;
             }
 
-
+            &:focus {
+                border-bottom: 3px solid #fe2222;
+                color        : $navBarHoverColor;
+            }
         }
-    }
 
-    .navBarRightContent {
-        @include flex-properties(5);
-        justify-content: right;
+        a {
+            text-decoration : none;
+            outline         : none;
+            border          : none;
+            background-color: inherit;
+            color           : $navBarHoverColor;
 
-        path:hover {
-            color : $navBarPrimaryColor;
-            cursor: pointer;
+            &::after {
+                font-family: "Font Awesome 5 free";
+                font-weight: 900;
+                font-size  : 1.4rem;
+                content    : '\f002';
+
+            }
+
+            &:hover {
+                color : $navBarPrimaryColor;
+                cursor: pointer;
+            }
         }
-    }
 
+
+    }
 }
+
+.navBarRightContent {
+    @include flex-properties(5);
+    justify-content: right;
+
+    path:hover {
+        color : $navBarPrimaryColor;
+        cursor: pointer;
+    }
+}
+
+// }

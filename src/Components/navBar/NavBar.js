@@ -6,6 +6,7 @@ import { searchedItemContext } from '../SearchBox/SearchBoxContext';
 
 function NavBar() {
     const [searchedItem, updateSearchedItem] = useContext(searchedItemContext)
+    // const searchBar = document.getElementById("inputBar");
 
     return (
         <header>
@@ -19,14 +20,14 @@ function NavBar() {
             </section>
             <section className="navBarCenterContent">
 
-                <form>
+                {/* <form onSubmit={e => { e.preventDefault(); document.querySelector('#searchIcon').click(); }} > */}
 
-                    <input type="text" placeholder="Enter a series or a movie" onChange={e => {
-                        updateSearchedItem(e.target.value)
-                    }} />
-                    <Link to="/searchedItems" ></Link>
+                <input id="inputBar" type="text" placeholder="Enter a series or a movie" onChange={e => {
+                    updateSearchedItem(e.target.value)
+                }} />
+                <Link id="searchIcon" to="/searchedItems" ></Link>
 
-                </form>
+                {/* </form> */}
             </section>
             <Link to="/_movieWatchList" className="navBarRightContent">
                 <BsBookmarkFill size="2rem" color="white" />
@@ -34,5 +35,12 @@ function NavBar() {
         </header>
     )
 }
+document.addEventListener('keyup', e => {
+    if (e.code === 'Enter') {
+        e.preventDefault();
+        let key = document.getElementById("searchIcon");
+        key.click();
+    }
+})
 
 export default NavBar;
