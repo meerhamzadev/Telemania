@@ -1,6 +1,6 @@
 import React from 'react';
 import FetchedDataDisplayComponent from '../FetchedDataDisplayComponent';
-
+import ScrollOnTop from '../../../ScrollOnTop';
 
 const DataFetchingAndRendering = (props) => {
 
@@ -9,11 +9,14 @@ const DataFetchingAndRendering = (props) => {
             {
                 window.location.href.slice(window.location.href.indexOf('_'), window.location.href.length) === props.Title
                     ?
-                    <FetchedDataDisplayComponent
-                        End={props.filmData.length}
-                        filmData={props.filmData}
-                        rate={props.rate}
-                    />
+                    <>
+                        <ScrollOnTop />
+                        <FetchedDataDisplayComponent
+                            End={props.filmData.length}
+                            filmData={props.filmData}
+                            rate={props.rate}
+                        />
+                    </>
 
                     :
                     window.innerWidth >= 1010 && window.innerWidth <= 1024 ?

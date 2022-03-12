@@ -42,10 +42,10 @@
         text-decoration : none;
         text-align      : center;
         width           : 20%;
-        background-color: rgb(49, 49, 233);
+        background-color: #ff2323;
         border          : none;
         outline         : none;
-        border-radius   : 1.5625rem;
+        border-radius   : .5rem;
         padding         : .625rem;
         color           : white;
         font-size       : 1.125rem;
@@ -65,8 +65,7 @@
         }
 
         &:hover {
-            width           : 23%;
-            background-color: rgb(16, 16, 199);
+            background-color: #8b0707;
             cursor          : pointer;
         }
     }

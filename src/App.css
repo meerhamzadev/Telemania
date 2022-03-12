@@ -75,13 +75,13 @@ header .navBarCenterContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5rem;
+  gap: 0rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-header .navBarCenterContent form input {
+header .navBarCenterContent input {
   outline: none;
   border: none;
   background-color: inherit;
@@ -92,23 +92,23 @@ header .navBarCenterContent form input {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  header .navBarCenterContent form input {
+  header .navBarCenterContent input {
     width: 32rem;
   }
 }
 
 @media (max-width: 420px) {
-  header .navBarCenterContent form input {
+  header .navBarCenterContent input {
     width: 25rem;
   }
 }
 
-header .navBarCenterContent form input:focus {
-  border-bottom: 3px solid #0000f7;
+header .navBarCenterContent input:focus {
+  border-bottom: 3px solid #fe2222;
   color: white;
 }
 
-header .navBarCenterContent form a {
+header .navBarCenterContent a {
   text-decoration: none;
   outline: none;
   border: none;
@@ -116,19 +116,19 @@ header .navBarCenterContent form a {
   color: white;
 }
 
-header .navBarCenterContent form a::after {
+header .navBarCenterContent a::after {
   font-family: "Font Awesome 5 free";
   font-weight: 900;
   font-size: 1.4rem;
   content: '\f002';
 }
 
-header .navBarCenterContent form a:hover {
+header .navBarCenterContent a:hover {
   color: #ffffff83;
   cursor: pointer;
 }
 
-header .navBarRightContent {
+.navBarRightContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,7 +141,7 @@ header .navBarRightContent {
           justify-content: right;
 }
 
-header .navBarRightContent path:hover {
+.navBarRightContent path:hover {
   color: #ffffff83;
   cursor: pointer;
 }
@@ -316,7 +316,7 @@ header .navBarRightContent path:hover {
   text-decoration: none;
   text-align: center;
   width: 70%;
-  background-color: #f8143a;
+  background-color: #ff2323;
   border: none;
   outline: none;
   border-radius: 25px;
@@ -341,7 +341,7 @@ header .navBarRightContent path:hover {
 
 .filmCardLink .filmCard .filmCardsActionButtons a:hover,
 .filmCardLink .filmCard .filmCardsActionButtons button:hover {
-  background-color: #bb112d;
+  background-color: #8b0707;
   cursor: pointer;
 }
 
@@ -431,10 +431,10 @@ header .navBarRightContent path:hover {
   text-decoration: none;
   text-align: center;
   width: 20%;
-  background-color: #3131e9;
+  background-color: #ff2323;
   border: none;
   outline: none;
-  border-radius: 1.5625rem;
+  border-radius: .5rem;
   padding: .625rem;
   color: white;
   font-size: 1.125rem;
@@ -460,8 +460,7 @@ header .navBarRightContent path:hover {
 }
 
 .filmSection .backButton:hover {
-  width: 23%;
-  background-color: #1010c7;
+  background-color: #8b0707;
   cursor: pointer;
 }
 
@@ -645,7 +644,7 @@ header .navBarRightContent path:hover {
   width: 7rem;
   text-align: center;
   vertical-align: middle;
-  background-color: #ff2e2e;
+  background-color: #ff2323;
   -webkit-transition: padding 1s;
   transition: padding 1s;
 }
@@ -844,7 +843,7 @@ header .navBarRightContent path:hover {
 }
 
 .backToPreviousPageButton {
-  background-color: red;
+  background-color: #ff2323;
   font-size: .9rem;
   color: white;
   text-align: center;
@@ -1021,7 +1020,12 @@ header .navBarRightContent path:hover {
   }
 }
 
-.Slider .imageSlider img {
+.Slider .imageSlider__image {
+  width: 25rem;
+  height: 28rem;
+}
+
+.Slider .imageSlider__image img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;

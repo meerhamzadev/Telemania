@@ -12,12 +12,12 @@
     }
 
     .imageSlider {
-        display: grid;
+        display              : grid;
         grid-template-columns: 1fr 2fr;
-        width    : 100%;
-        max-width: 90rem;
-        height   : 30rem;
-        
+        width                : 100%;
+        max-width            : 90rem;
+        height               : 30rem;
+
         @include phoneResponsive {
             height: 45rem;
         }
@@ -26,58 +26,64 @@
             height: 45rem;
         }
 
-        img {
-            object-fit: contain;
-            width     : 100%;
-            height    : 100%;
+        &__image {
+            width : 25rem;
+            height: 28rem;
+
+            img {
+                object-fit: contain;
+                width     : 100%;
+                height    : 100%;
+            }
+
         }
-        
+
         &__info {
             color: #ff2323;
-            
+
             &__title {
                 font-size: 3rem;
-                
+
                 span {
                     color: white;
                 }
             }
-            
+
             &__year {
                 font-size: 1.2rem;
-                
+
                 span {
                     color: white;
                 }
             }
-            
+
             &__runtime {
                 font-size: 1.2rem;
-                
+
                 span {
                     color: white;
                 }
             }
-            
+
             &__stars {
                 font-size: 1.2rem;
-                
+
                 span {
                     color: white;
                 }
             }
-            
+
             &__genre {
                 font-size: 1.2rem;
-                
+
                 span {
                     color: white;
                 }
             }
-            
+
             &__plot {
                 font-size: 1rem;
-                
+
                 span {
                     color: white;
                 }
