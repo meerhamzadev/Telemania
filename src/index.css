@@ -5,33 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color       : #1c1c1c;
 }
 
 html {
   box-sizing     : border-box;
   scroll-behavior: smooth;
 }
-
-@media (min-width: 768px) and (max-width:1024px) {
-
-  html {
-    font-size: 70%;
-  }
-}
-
-@media (max-width: 420px) {
-  html {
-    font-size: 50%;
-  }
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

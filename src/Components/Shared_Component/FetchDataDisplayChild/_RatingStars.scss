@@ -1,8 +1,0 @@
-    .starColor {
-        color  : yellow;
-        padding: 0px 2px 2px 2px;
-
-        @include phoneResponsive {
-            font-size: 1.5rem;
-        }
-    }
