@@ -1,0 +1,8 @@
+#scroll-feed::-webkit-scrollbar {
+    display: none;
+}
+  
+#scroll-feed {
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+}
