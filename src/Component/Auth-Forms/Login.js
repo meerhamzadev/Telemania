@@ -2,14 +2,15 @@ import React from 'react'
 import InputWrapper from '../ReusableWrapper/InputWrapper'
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { authApp } from '../../Firebase';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
+    const redirect = useNavigate();
     const login = async e => {
         e.preventDefault();
         try {
             await signInWithEmailAndPassword(authApp, e.target.email.value, e.target.password.value);
-            await document.querySelector('#naiLink').click();
+            redirect('/movies');
         }
         catch (e) {
             alert(e.message);
@@ -27,7 +28,7 @@ function Login() {
                 <button type='submit' className='bg-btn-red text-white  p-3 font-semibold w-full xl:w-2/5 rounded-xl ' >Sign In</button>
                 <button className='bg-white text-black p-3 font-semibold w-full xl:w-2/5 rounded-xl' >Sign In with Google</button>
             </div>
-            <Link to="/homepage" id="naiLink" className="hidden">fd</Link>
+
         </form>
     )
 }

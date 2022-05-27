@@ -2,16 +2,17 @@ import React from 'react'
 import InputWrapper from '../ReusableWrapper/InputWrapper'
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { authApp } from '../../Firebase';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Register() {
+    const redirect = useNavigate();
     const register = async e => {
         e.preventDefault();
         try {
             if (e.target.password.value === e.target.cpassword.value) {
                 await createUserWithEmailAndPassword(authApp, e.target.email.value, e.target.password.value);
                 authApp.signOut();
-                document.querySelector('#naviLink').click();
+                redirect('/signIn');
             }
             else {
                 alert('Passwords do not match');
@@ -35,7 +36,7 @@ function Register() {
                 <button type='submit' className='bg-btn-red text-white p-3 font-semibold w-full xl:w-2/5 rounded-xl ' >Register</button>
                 <button className='bg-white text-black p-3 font-semibold w-full xl:w-2/5 rounded-xl' >Register with Google</button>
             </div>
-            <h4 className="text-white text-xs xl:text-sm font-medium xl:w-1/2  tracking-wide mb-5">Already had an Account? <Link to='/signIn' id="naviLink" className='text-btn-red' >Sign in</Link></h4>
+            <h4 className="text-white text-xs xl:text-sm font-medium xl:w-1/2  tracking-wide mb-5">Already had an Account? <Link to='/signIn' className='text-btn-red' >Sign in</Link></h4>
         </form>
     )
 }
