@@ -1,12 +1,18 @@
 {
-  "name": "tele-mania",
+  "name": "telemania",
   "version": "2.0.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.27.2",
+    "firebase": "^9.8.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
-    "react-scripts": "5.0.0"
+    "react-loading": "^2.0.3",
+    "react-player": "^2.10.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.0",
+    "react-simple-image-slider": "^2.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
