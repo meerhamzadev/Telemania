@@ -2,14 +2,12 @@ import React from 'react'
 import SimpleImageSlider from "react-simple-image-slider";
 
 
-function ImageCarousel() {
+function ImageCarousel({ carousalImages }) {
     const images = [
-        { url: "https://imdb-api.com/images/original/MV5BZGQ1NjQyNDMtNzFlZS00ZGIzLTliMWUtNGJkMGMzNTBjNDg0XkEyXkFqcGdeQXVyMTE1NDI5MDQx._V1_Ratio0.6751_AL_.jpg", },
-        { url: "https://imdb-api.com/images/original/MV5BZGQ1NjQyNDMtNzFlZS00ZGIzLTliMWUtNGJkMGMzNTBjNDg0XkEyXkFqcGdeQXVyMTE1NDI5MDQx._V1_Ratio0.6751_AL_.jpg", },
-        { url: "https://imdb-api.com/images/original/MV5BZGQ1NjQyNDMtNzFlZS00ZGIzLTliMWUtNGJkMGMzNTBjNDg0XkEyXkFqcGdeQXVyMTE1NDI5MDQx._V1_Ratio0.6751_AL_.jpg", },
-        { url: "https://imdb-api.com/images/original/MV5BZGQ1NjQyNDMtNzFlZS00ZGIzLTliMWUtNGJkMGMzNTBjNDg0XkEyXkFqcGdeQXVyMTE1NDI5MDQx._V1_Ratio0.6751_AL_.jpg", },
-        { url: "https://imdb-api.com/images/original/MV5BZGQ1NjQyNDMtNzFlZS00ZGIzLTliMWUtNGJkMGMzNTBjNDg0XkEyXkFqcGdeQXVyMTE1NDI5MDQx._V1_Ratio0.6751_AL_.jpg", },
-        { url: "https://imdb-api.com/images/original/MV5BZGQ1NjQyNDMtNzFlZS00ZGIzLTliMWUtNGJkMGMzNTBjNDg0XkEyXkFqcGdeQXVyMTE1NDI5MDQx._V1_Ratio0.6751_AL_.jpg", },
+        { url: carousalImages[0].image, },
+        { url: carousalImages[1].image, },
+        { url: carousalImages[2]?.image, },
+        { url: carousalImages[3]?.image },
     ];
     let width = '80vw';
     return (

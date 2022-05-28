@@ -9,7 +9,7 @@ function MovieHome() {
 
     return (
         <section className='mb-14 md:mb-0 flex flex-col gap-5 '>
-            <ImageCarousel />
+            <ImageCarousel carousalImages={movieData[2].slice(9, 13)} />
             <MainFeed feedData={movieData[2].slice(0, 4)} feedTitle="Popular" Cards={MovieCards} pageLink="popularmovies" />
             <MainFeed feedData={movieData[4].slice(0, 4)} feedTitle="Top Rated ⭐" Cards={MovieCards} pageLink="topratedmovies" />
         </section>
