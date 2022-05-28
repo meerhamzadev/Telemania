@@ -1,8 +1,8 @@
 import React from 'react'
-import logo from '../Assets/App-Logo.png'
+import logo from '../../Assets/App-Logo.png'
 import SectionWrapper from '../ReusableWrapper/SectionWrapper'
-import src from '../Assets/welcome.png';
-import src1 from '../Assets/welcome2.png';
+import welcomePic1 from '../../Assets/welcome.png';
+import welcomePic2 from '../../Assets/welcome2.png';
 
 import { Link } from 'react-router-dom';
 
@@ -15,10 +15,10 @@ function WelcomPage() {
             </div>
             <div className='flex flex-col md:flex-row-reverse md:grow h-3/4' >
                 <div className='flex md:hidden lg:flex items-center sm:justify-center md:justify-end w-full h-full' >
-                    <img src={src} className="w-full sm:w-3/4 md:w-full h-full " alt="something went wrong" />
+                    <img src={welcomePic1} className="w-full sm:w-3/4 md:w-full h-full " alt="something went wrong" />
                 </div>
                 <div className='hidden md:flex lg:hidden items-center justify-end w-full h-full' >
-                    <img src={src1} className="w-3/4 h-1/2 object-contain" alt="something went wrong" />
+                    <img src={welcomePic2} className="w-3/4 h-1/2 object-contain" alt="something went wrong" />
                 </div>
                 <div className=' flex gap-4 w-full lg:gap-3 flex-col justify-center sm:items-center md:items-start lg:pl-2' >
                     <h2 className='text-xl lg:text-2xl font-bold w-full sm:w-3/4 md:w-full lg:w-3/4' >Telemania is a leading entertainment database in xyz</h2>
