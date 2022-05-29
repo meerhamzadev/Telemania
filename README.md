@@ -23,6 +23,10 @@
 ## Preview 🔎
 
 
+https://user-images.githubusercontent.com/60890818/170873412-a7119e80-9e26-435d-97e2-9d0f1f70bbd6.mp4
+
+
+
 
 ## AUTHOR ⚡
 
