@@ -20,6 +20,7 @@ import SearchData from './Component/SearchData/SearchData';
 import MovieHome from './Component/HomePage/MovieHome';
 import SeriesHome from './Component/HomePage/SeriesHome';
 import RouteWrappers from './Component/ReusableWrapper/RouteWrappers';
+import GoogleLoginWrapper from './Component/Auth-Forms/GoogleLoginWrapper';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -63,8 +64,18 @@ const App = () => {
         ) : (
           <Routes>
             <Route path="/" element={<WelcomPage />} />
-            <Route path="signIn" element={<Login />} />
-            <Route path="register" element={<Register />} />
+              <Route path="signIn" element={
+                <GoogleLoginWrapper
+                  render={(loginWithGoogle) => (
+                    <Login loginWithGoogle={loginWithGoogle} />
+                  )} />
+              } />
+              <Route path="register" element={
+                <GoogleLoginWrapper
+                  render={(loginWithGoogle) => (
+                    <Register loginWithGoogle={loginWithGoogle} />
+                  )} />
+              } />
           </Routes>
         )
       }

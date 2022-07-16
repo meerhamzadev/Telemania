@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { authApp } from '../../Firebase';
 import { Link, useNavigate } from 'react-router-dom';
 
-function Register() {
+function Register({ loginWithGoogle }) {
     const redirect = useNavigate();
     const register = async e => {
         e.preventDefault();
@@ -34,7 +34,7 @@ function Register() {
             <InputWrapper Type="password" Name="cpassword" placeHolder="Confirm Password" />
             <div className='flex flex-col lg:flex-row lg:justify-between gap-2 lg:gap-3 w-5/6 sm:w-4/6 lg:w-1/2 text-sm mt-14 mb-3'>
                 <button type='submit' className='bg-btn-red text-white p-3 font-semibold w-full xl:w-2/5 rounded-xl ' >Register</button>
-                <button className='bg-white text-black p-3 font-semibold w-full xl:w-2/5 rounded-xl' >Register with Google</button>
+                <button onClick={loginWithGoogle} className='bg-white text-black p-3 font-semibold w-full xl:w-2/5 rounded-xl' >Get Started with Google</button>
             </div>
             <h4 className="text-white text-xs xl:text-sm font-medium xl:w-1/2  tracking-wide mb-5">Already had an Account? <Link to='/signIn' className='text-btn-red' >Sign in</Link></h4>
         </form>

@@ -1,10 +1,10 @@
 import React from 'react'
 import InputWrapper from '../ReusableWrapper/InputWrapper'
-import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-import { authApp } from '../../Firebase';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
+import { authApp } from '../../Firebase';
 
-function Login() {
+function Login({ loginWithGoogle }) {
     const redirect = useNavigate();
     const login = async e => {
         e.preventDefault();
@@ -13,18 +13,6 @@ function Login() {
             redirect('/movies');
         }
         catch (e) {
-            alert(e.message);
-        }
-    }
-    const loginWithGoogle = async e => {
-        e.preventDefault();
-        try {
-            const provider = new GoogleAuthProvider();
-            const result = await signInWithPopup(authApp, provider);
-            GoogleAuthProvider.credentialFromResult(result);
-
-            redirect('/movies');
-        } catch (e) {
             alert(e.message);
         }
     }
